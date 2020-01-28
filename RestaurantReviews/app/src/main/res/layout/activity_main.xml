@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.restaurantreviews.adapter.RestaurantFragmentAdapter"/>
+        <variable
+            name="adapter"
+            type="RestaurantFragmentAdapter" />
+        <variable
+            name="mainActivity"
+            type="com.example.restaurantreviews.MainActivity" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_main_fl">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:title="食堂点评"
+                app:titleTextColor="@color/white" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/id_main_vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/id_main_bnv"
+                app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+                app:layout_constraintVertical_weight="1"
+                app:setAdapter="@{adapter}" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/id_main_bnv"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:menu="@menu/bottom_restaurant" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

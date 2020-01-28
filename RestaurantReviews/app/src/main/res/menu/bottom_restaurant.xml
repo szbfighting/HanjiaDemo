@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_xuri"
+        android:title="旭日餐厅"
+        android:icon="@drawable/bottom_item_drawable"/>
+    <item
+        android:id="@+id/id_dongsheng"
+        android:title="东升餐厅"
+        android:icon="@drawable/bottom_item_drawable"/>
+    <item
+        android:id="@+id/id_meiguang"
+        android:title="美食广场"
+        android:icon="@drawable/bottom_item_drawable"/>
+
+</menu>
