@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">口算测试</string>
+    <string name="answer_correct_message">回答正确！请继续。</string>
+    <string name="button_back_to_title">返回</string>
+    <string name="current_score">成绩:%d</string>
+    <string name="dialog_message">你确定要退出答题吗？</string>
+    <string name="high_score_message">纪录:%d</string>
+    <string name="input_indocator">你的答案:%d</string>
+    <string name="lose_message">你输了！</string>
+    <string name="lose_score_message">已答对:%d</string>
+    <string name="title_button_message">进入</string>
+    <string name="title_message">口算测试</string>
+    <string name="win_message">你破纪录了！</string>
+    <string name="win_score_message">新纪录:%d</string>
+</resources>

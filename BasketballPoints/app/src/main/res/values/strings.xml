@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BasketballPoints</string>
+    <string name="textview1">Team A</string>
+    <string name="textview2">Team B</string>
+    <string name="scorea" translatable="false">0</string>
+    <string name="scoreb" translatable="false">0</string>
+    <string name="button1" translatable="false">+1</string>
+    <string name="button2" translatable="false">+2</string>
+    <string name="button3" translatable="false">+3</string>
+</resources>
